@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* 共通部分
+-----------------------------------------------------*/
+html{
+    font-size: 100%;
+}
+body{
+    font-family:"こぶりなゴシック" "Bellota" "Bradley Hand" "Mohave";
+    line-height: 1.4px;
+    color:#434F49;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* HEADER */
+.page-header{
+    background-color: #434F49;
+    padding: 40px 20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-nav{
+    display: flex;
+    gap: 20px;
+}
+.page-header h1 a{
+    color: #F4ECD0;
+    font-family: "Bellota";
+    font-size: 1.75rem;
+    margin: 8px 0;
+}
+.main-nav li a{
+    color: #F4ECD0;
+    font-family: "Bellota";
+    font-size: 1.375rem;
+    margin: 8px 0;
+}
+
+/* top page */
+.top-wrapper{
+    background-color: #F4ECD0;
+    padding: 20px 80px;
+    position: relative
+}
+.top-wrapper h2{
+    text-align: center;
+    font-size: 45px;
+    font-family: "Bradley Hand";
+    margin: 20px 0 20px 0;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+}
+.top-wrapper img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* works page */
+.works-wrapper{
+    background-color: #434F49;
+    color: #F4ECD0;
+    padding: 20px 80px;
+}
+.works-wrapper h2{
+    text-align: center;
+    font-size: 35px;
+    font-family: "Bellota";
+    margin: 40px 0;
+}
+.wrapper-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+.item p{
+    text-align: center;
+    font-size: 1.125rem;
+    margin-top: 24px;
+}
+
+/* profile & contact page */
+.Prof-Cont-wrapper{
+    background-color: #F4ECD0;
+    display: flex;
+    gap: 40px;
+    padding: 80px;
+    position: relative;
+}
+.pro-button{
+    color: #F4ECD0;
+    font-family: "Bellota";
+    font-size: 2.1875rem;
+    letter-spacing: 2.5px;
+    padding: 12px 24px;
+    position: absolute;
+    top: 48%;
+    left: 17%;
+}
+.con-button{
+    color: #F4ECD0;
+    font-family: "Bellota";
+    font-size: 2.1875rem;
+    letter-spacing: 2.5px;
+    padding: 12px 24px;
+    position: absolute;
+    top: 48%;
+    right: 20.5%;
+}
+.Prof-Cont-wrapper img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* Profile page */
+.profile-wrapper{
+    background-color: #F4ECD0;
+    color: #434F49;
+    padding: 20px 0 ;
+    position: relative
+}
+.page-title{
+    text-align: left;
+    font-size: 35px;
+    font-family: "Bellota";
+    letter-spacing: 2.5px;
+    margin: 60px 80px;
+}
+.profile-image{
+    display: flex;
+    width: 20%;
+    height: auto;
+    flex-direction: column;
+    margin: 90px 160px 40px 200px;
+}
+.name{
+    font-size: 1.75rem;
+    font-family: "こぶりなゴシック";
+    margin-bottom: 72px;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+}
+.job{
+    font-size: 1.125rem;
+    font-family: "こぶりなゴシック";
+    line-height: 2;
+    position: absolute;
+    top: 40%;
+    right: 24%;
+}
+.my-fave{
+    font-size: 1.125rem;
+    font-family: "こぶりなゴシック";
+    line-height: 2;
+    position: absolute;
+    top: 57%;
+    right: 22.5%;
+}
+.contact{
+    font-size: 1.125rem;
+    font-family: "こぶりなゴシック";
+    line-height: 2;
+    position: absolute;
+    top: 82%;
+    right: 9.5%;
+}
+
+/* Contact page */
+.contact-wrapper{
+    background-color: #F4ECD0;
+    color: #434F49;
+    padding: 20px 0 0 0;
+    position: relative;
+}
+.contact-wrapper h2{
+    text-align: left;
+    font-size: 35px;
+    font-family: "Bellota";
+    margin: 60px 80px;
+}
+form div{
+    margin:0 auto;
+    width: 30%;
+    text-align: left;
+}
+
+label{
+    font-size: 1rem;
+    margin: 16px 0;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+    background: rgba(103,118,84,.2);
+    border: 1px #677654 solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    width: 100%;
+    max-width: 480px;
+}
+textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"]{
+    width: 100%;
+    margin: 40px auto;
+    border: none;
+    cursor: pointer;
+    line-height: 4;
+    background-color: #4C709F;
+    color: #F4ECD0;
+    position: relative;
+}
+/* FOOTER */
+.footer-wrapper{
+    background-color: #434F49;
+    color: #F4ECD0;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.125rem;
+}
